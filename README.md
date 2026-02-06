@@ -30,19 +30,19 @@ Cryptonic Area Virtual Internship Program
 
 ## Folder Structure
 secure_todo_app/
-├── app.py                    # Main application entry
-├── config.py                 # Configuration & secrets
+├── app.py                    # Main Flask app
+├── config.py                 # Configuration (secret key, etc.)
 ├── models.py                 # User & Todo database models
-├── forms.py                  # Registration, Login, Todo forms
-├── routes.py                 # All URL routes & logic
-├── utils.py                  # Input sanitization helper
+├── forms.py                  # Forms with validation
+├── routes.py                 # All routes and logic
+├── utils.py                  # Sanitization helper
 ├── templates/                # HTML templates
 │   ├── base.html             # Main layout + navbar
 │   ├── login.html
 │   ├── register.html
 │   ├── home.html
 │   ├── admin.html
-├── static/
+├── static/                   # CSS & JS
 │   ├── css/
 │   │   ├── bootstrap.min.css
 │   │   └── custom.css
@@ -51,9 +51,9 @@ secure_todo_app/
 │       └── custom.js
 ├── requirements.txt
 ├── .gitignore
-├── .env.example              # Template for .env file
+├── .env.example              # Example for .env file
 └── screenshots/              # Project images
-text## How to Run Locally
+## How to Run Locally
 
 1. Clone the repository
 
