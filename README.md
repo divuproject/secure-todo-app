@@ -61,7 +61,7 @@ text## How to Run Locally
 git clone https://github.com/«your-github-username»/secure-todo-app.git
 cd secure-todo-app
 
-Create & activate virtual environment
+2.Create & activate virtual environment
 
 Bash# Windows
 python -m venv venv
@@ -71,20 +71,20 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 
-Install dependencies
+3.Install dependencies
 
 Bashpip install -r requirements.txt
 
-Create .env file (copy from .env.example if present)
+4. Create .env file (copy from .env.example if present)
 
 textSECRET_KEY=«paste-a-very-long-random-string-here»
 (You can generate one with: python -c "import secrets; print(secrets.token_hex(32))")
 
-Run the application
+5. Run the application
 
 Bashpython app.py
 
-Open in browser → http://127.0.0.1:5000
+6. Open in browser → http://127.0.0.1:5000
 
 Screenshots
 Register PageLogin PageHome - Light ModeHome - Dark ModeAdmin Panel
