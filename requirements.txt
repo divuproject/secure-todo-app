@@ -1,0 +1,9 @@
+flask==3.0.3
+flask-sqlalchemy==3.1.1
+flask-bcrypt==1.0.1
+flask-login==0.6.3
+Flask-Limiter==2.9.2   # or 2.8.0 — last major 2.x release
+werkzeug==3.0.3
+itsdangerous==2.2.0
+bleach==6.1.0
+python-dotenv==1.0.1
