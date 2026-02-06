@@ -56,7 +56,7 @@ secure_todo_app/
 ├── .env.example              # Example template for .env file
 └── screenshots/              # Project screenshots for documentation
   
-
+```
 ## How to Run Locally
 
 1. Clone the repository
@@ -90,22 +90,34 @@ Bashpython app.py
 
 6. Open in browser → http://127.0.0.1:5000
 
-Screenshots
-Register PageLogin PageHome - Light ModeHome - Dark ModeAdmin Panel
-(Add these images in a folder called screenshots/ before pushing)
-What I Learned
-During the Cryptonic Area Virtual Internship, I gained hands-on experience in:
+```
+## What I Learned 🚀
 
-Implementing secure authentication & session management using Flask-Login
-Using Bcrypt for proper password storage and enforcing strong password rules
-Preventing XSS attacks with input validation (WTForms) + sanitization (Bleach)
-Adding rate limiting and security headers to make the application more resilient
-Applying least privilege principle with role-based access control
-Writing clean, professional GitHub documentation for real-world projects
+During the **Cryptonic Area Virtual Internship**, I gained valuable hands-on experience in:
 
-This internship helped me understand secure-by-design thinking — not just finding vulnerabilities, but preventing them from the beginning.
+- 🔐 **Secure authentication & session management**  
+  Implemented using **Flask-Login** to handle user sessions securely...
+
+- 🔒 **Proper password hashing & strong password policies**  
+  Used **Bcrypt** for secure password storage...
+
+- 🛡️ **Preventing XSS attacks**  
+  Applied **input validation** with WTForms and **Bleach** sanitization...
+
+- ⚡ **Rate limiting & security headers**  
+  Added **Flask-Limiter** and modern security headers...
+
+- 👑 **Least privilege with role-based access control (RBAC)**  
+  Implemented user/admin roles to restrict access...
+
+- 📝 **Writing clean & professional GitHub documentation**  
+  Structured project with clear layout, README, screenshots...
+
+This project helped me deeply understand **secure-by-design thinking** — shifting from finding vulnerabilities to **proactively preventing** them.
+
+A great learning journey in building secure web applications! 💻
+
 Author
-
 Name: Divya Hirpara
 Location: Ahmedabad, Gujarat, India
 GitHub: https://github.com/«divuproject»
