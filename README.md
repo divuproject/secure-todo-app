@@ -29,31 +29,35 @@ Cryptonic Area Virtual Internship Program
 - **Frontend** → Bootstrap 5 + Font Awesome + custom dark/light theme toggle
 
 ## Folder Structure
+
+```text
 secure_todo_app/
-├── app.py                    # Main application entry
-├── config.py                 # Configuration & secrets
-├── models.py                 # User & Todo database models
-├── forms.py                  # Registration, Login, Todo forms
-├── routes.py                 # All URL routes & logic
-├── utils.py                  # Input sanitization helper
-├── templates/                # HTML templates
-│   ├── base.html             # Main layout + navbar
-│   ├── login.html
-│   ├── register.html
-│   ├── home.html
-│   ├── admin.html
-├── static/
+├── app.py                    # Main Flask application entry point
+├── config.py                 # Configuration (secret key, database URI, etc.)
+├── models.py                 # Database models (User and Todo)
+├── forms.py                  # WTForms forms with validation rules
+├── routes.py                 # All application routes and business logic
+├── utils.py                  # Helper functions (input sanitization, etc.)
+├── templates/                # Jinja2 HTML templates
+│   ├── base.html             # Main layout (navbar, theme toggle, flash messages)
+│   ├── login.html            # Login page
+│   ├── register.html         # Registration page
+│   ├── home.html             # Todo list + add form
+│   └── admin.html            # Admin panel (user list)
+├── static/                   # Static files (CSS, JS)
 │   ├── css/
-│   │   ├── bootstrap.min.css
-│   │   └── custom.css
+│   │   ├── bootstrap.min.css     # Bootstrap CSS
+│   │   └── custom.css            # Custom styles + dark mode support
 │   └── js/
-│       ├── bootstrap.bundle.min.js
-│       └── custom.js
-├── requirements.txt
-├── .gitignore
-├── .env.example              # Template for .env file
-└── screenshots/              # Project images
-text## How to Run Locally
+│       ├── bootstrap.bundle.min.js  # Bootstrap JS + Popper.js
+│       └── custom.js             # Theme toggle logic
+├── requirements.txt          # List of Python dependencies
+├── .gitignore                # Files/folders to ignore in Git
+├── .env.example              # Example template for .env file
+└── screenshots/              # Project screenshots for documentation
+  
+```
+## How to Run Locally
 
 1. Clone the repository
 
@@ -61,7 +65,7 @@ text## How to Run Locally
 git clone https://github.com/«your-github-username»/secure-todo-app.git
 cd secure-todo-app
 
-Create & activate virtual environment
+2.Create & activate virtual environment
 
 Bash# Windows
 python -m venv venv
@@ -71,37 +75,49 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 
-Install dependencies
+3.Install dependencies
 
 Bashpip install -r requirements.txt
 
-Create .env file (copy from .env.example if present)
+4. Create .env file (copy from .env.example if present)
 
 textSECRET_KEY=«paste-a-very-long-random-string-here»
 (You can generate one with: python -c "import secrets; print(secrets.token_hex(32))")
 
-Run the application
+5. Run the application
 
 Bashpython app.py
 
-Open in browser → http://127.0.0.1:5000
+6. Open in browser → http://127.0.0.1:5000
 
-Screenshots
-Register PageLogin PageHome - Light ModeHome - Dark ModeAdmin Panel
-(Add these images in a folder called screenshots/ before pushing)
-What I Learned
-During the Cryptonic Area Virtual Internship, I gained hands-on experience in:
+```
+## What I Learned 🚀
 
-Implementing secure authentication & session management using Flask-Login
-Using Bcrypt for proper password storage and enforcing strong password rules
-Preventing XSS attacks with input validation (WTForms) + sanitization (Bleach)
-Adding rate limiting and security headers to make the application more resilient
-Applying least privilege principle with role-based access control
-Writing clean, professional GitHub documentation for real-world projects
+During the **Cryptonic Area Virtual Internship**, I gained valuable hands-on experience in:
 
-This internship helped me understand secure-by-design thinking — not just finding vulnerabilities, but preventing them from the beginning.
+- 🔐 **Secure authentication & session management**  
+  Implemented using **Flask-Login** to handle user sessions securely...
+
+- 🔒 **Proper password hashing & strong password policies**  
+  Used **Bcrypt** for secure password storage...
+
+- 🛡️ **Preventing XSS attacks**  
+  Applied **input validation** with WTForms and **Bleach** sanitization...
+
+- ⚡ **Rate limiting & security headers**  
+  Added **Flask-Limiter** and modern security headers...
+
+- 👑 **Least privilege with role-based access control (RBAC)**  
+  Implemented user/admin roles to restrict access...
+
+- 📝 **Writing clean & professional GitHub documentation**  
+  Structured project with clear layout, README, screenshots...
+
+This project helped me deeply understand **secure-by-design thinking** — shifting from finding vulnerabilities to **proactively preventing** them.
+
+A great learning journey in building secure web applications! 💻
+
 Author
-
 Name: Divya Hirpara
 Location: Ahmedabad, Gujarat, India
 GitHub: https://github.com/«divuproject»
