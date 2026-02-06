@@ -29,30 +29,34 @@ Cryptonic Area Virtual Internship Program
 - **Frontend** → Bootstrap 5 + Font Awesome + custom dark/light theme toggle
 
 ## Folder Structure
+
+```text
 secure_todo_app/
-├── app.py                    # Main Flask app
-├── config.py                 # Configuration (secret key, etc.)
-├── models.py                 # User & Todo database models
-├── forms.py                  # Forms with validation
-├── routes.py                 # All routes and logic
-├── utils.py                  # Sanitization helper
-├── templates/                # HTML templates
-│   ├── base.html             # Main layout + navbar
-│   ├── login.html
-│   ├── register.html
-│   ├── home.html
-│   ├── admin.html
-├── static/                   # CSS & JS
+├── app.py                    # Main Flask application entry point
+├── config.py                 # Configuration (secret key, database URI, etc.)
+├── models.py                 # Database models (User and Todo)
+├── forms.py                  # WTForms forms with validation rules
+├── routes.py                 # All application routes and business logic
+├── utils.py                  # Helper functions (input sanitization, etc.)
+├── templates/                # Jinja2 HTML templates
+│   ├── base.html             # Main layout (navbar, theme toggle, flash messages)
+│   ├── login.html            # Login page
+│   ├── register.html         # Registration page
+│   ├── home.html             # Todo list + add form
+│   └── admin.html            # Admin panel (user list)
+├── static/                   # Static files (CSS, JS)
 │   ├── css/
-│   │   ├── bootstrap.min.css
-│   │   └── custom.css
+│   │   ├── bootstrap.min.css     # Bootstrap CSS
+│   │   └── custom.css            # Custom styles + dark mode support
 │   └── js/
-│       ├── bootstrap.bundle.min.js
-│       └── custom.js
-├── requirements.txt
-├── .gitignore
-├── .env.example              # Example for .env file
-└── screenshots/              # Project images
+│       ├── bootstrap.bundle.min.js  # Bootstrap JS + Popper.js
+│       └── custom.js             # Theme toggle logic
+├── requirements.txt          # List of Python dependencies
+├── .gitignore                # Files/folders to ignore in Git
+├── .env.example              # Example template for .env file
+└── screenshots/              # Project screenshots for documentation
+  
+
 ## How to Run Locally
 
 1. Clone the repository
