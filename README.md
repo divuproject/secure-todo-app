@@ -1,6 +1,6 @@
 # Secure Web Application & Threat Hardening
 
-![Secure Todo App - Home Page](screenshots/home-light.png)  
+![Secure Todo App - Home Page](screenshots/home1.png)  
 *(Light & Dark mode + Todo list)*
 
 ## Project Overview
